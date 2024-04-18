@@ -115,8 +115,8 @@ export default {
       selectedIndex: -1,
       showDropdown: false,
       searchCountry: '',
-      activeCountryCode: '',
-      activeDialCode: '',
+      activeCountryCode: 'IR',
+      activeDialCode: '+98',
       phoneNumber: '',
     };
   },
@@ -287,6 +287,7 @@ export default {
 @import '~widget/assets/scss/variables.scss';
 .phone-input--wrap {
   .phone-input {
+    direction: ltr;
     height: 2.8rem;
 
     input:placeholder-shown {

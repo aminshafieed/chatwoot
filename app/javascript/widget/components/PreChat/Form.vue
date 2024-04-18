@@ -1,7 +1,7 @@
 <template>
   <FormulateForm
     v-model="formValues"
-    class="flex flex-col flex-1 p-6 overflow-y-auto"
+    class="flex flex-col flex-1 p-6 overflow-y-auto rtl"
     @submit="onSubmit"
   >
     <div
@@ -318,6 +318,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~widget/assets/scss/variables.scss';
+
+.rtl {
+  direction: rtl;
+}
+
 ::v-deep {
   .wrapper[data-type='checkbox'] {
     .formulate-input-wrapper {

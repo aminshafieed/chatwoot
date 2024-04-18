@@ -150,6 +150,7 @@ export default {
 }
 
 .header-wrap {
+  direction: rtl;
   flex-shrink: 0;
   transition: max-height 100ms;
 

@@ -184,7 +184,7 @@ export default {
   display: flex;
   padding: 0 $space-small 0 $space-slab;
   border-radius: 7px;
-
+  direction: rtl;
   &.is-focused {
     box-shadow:
       0 0 0 1px $color-woot,
@@ -205,7 +205,7 @@ export default {
 .button-wrap {
   display: flex;
   align-items: center;
-  padding-left: $space-small;
+  padding-right: $space-small;
 }
 
 .user-message-input {

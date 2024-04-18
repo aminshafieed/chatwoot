@@ -6,11 +6,11 @@
     <div class="flex items-center">
       <button
         v-if="showBackButton"
-        class="-ml-3 px-2"
+        class="-mr-3 px-2"
         @click="onBackButtonClick"
       >
         <fluent-icon
-          icon="chevron-left"
+          icon="chevron-right"
           size="24"
           :class="$dm('text-black-900', 'dark:text-slate-50')"
         />
@@ -26,11 +26,11 @@
           class="font-medium text-base leading-4 flex items-center"
           :class="$dm('text-black-900', 'dark:text-slate-50')"
         >
-          <span v-dompurify-html="title" class="mr-1" />
           <div
             :class="`h-2 w-2 rounded-full
               ${isOnline ? 'bg-green-500' : 'hidden'}`"
           />
+          <span v-dompurify-html="title" class="mr-1" />
         </div>
         <div
           class="text-xs mt-1 leading-3"

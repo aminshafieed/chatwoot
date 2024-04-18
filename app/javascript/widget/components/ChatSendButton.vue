@@ -2,7 +2,7 @@
   <button
     type="submit"
     :disabled="disabled"
-    class="icon-button flex items-center justify-center ml-1"
+    class="icon-button flex items-center justify-center mr-1"
     @click="onClick"
   >
     <fluent-icon v-if="!loading" icon="send" :style="`color: ${color}`" />

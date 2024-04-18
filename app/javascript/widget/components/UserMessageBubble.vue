@@ -1,7 +1,7 @@
 <template>
   <div
     v-dompurify-html="formatMessage(message, false)"
-    class="chat-bubble user"
+    class="chat-bubble rtl user"
     :style="{ background: widgetColor, color: textColor }"
   />
 </template>
@@ -38,6 +38,9 @@ export default {
 <style lang="scss" scoped>
 @import '~widget/assets/scss/variables.scss';
 
+.chat-bubble {
+  direction: rtl;
+}
 .chat-bubble.user::v-deep {
   p code {
     background-color: var(--w-600);

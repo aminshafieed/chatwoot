@@ -125,7 +125,7 @@ export default {
 
 .actions {
   button {
-    margin-left: $space-normal;
+    margin-right: $space-normal;
   }
 
   span {
