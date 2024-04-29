@@ -302,7 +302,9 @@ export const IFrameHelper = {
 
     const chatIcon = createBubbleIcon({
       className,
-      path: bubbleSVG,
+      path: window.$chatwoot.svgIcon?.path
+        ? window.$chatwoot.svgIcon.path
+        : bubbleSVG,
       target: chatBubble,
     });
 
